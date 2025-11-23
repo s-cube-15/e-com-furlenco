@@ -47,7 +47,7 @@ npm install -g @angular/cli@16.2.16
 
 ```bash
 git clone https://github.com/s-cube-15/Angular-Furniture-Commerce.git
-cd Angular-Furniture-Commerce/Online
+cd Angular-Furniture-Commerce
 ```
 
 2. **Install dependencies**
@@ -66,7 +66,7 @@ npm install -g json-server
 
 ### 1. Start the Backend API Server
 
-Navigate to the root project directory and run:
+In the project root directory, run:
 
 ```bash
 json-server --watch DataAPI.json --port 3000
@@ -76,7 +76,7 @@ The API server will run at `http://localhost:3000`
 
 ### 2. Start the Angular Development Server
 
-In a new terminal, navigate to the `Online` directory and run:
+In a new terminal (also in the project root), run:
 
 ```bash
 ng serve
@@ -87,7 +87,7 @@ Navigate to `http://localhost:4200/` in your browser. The application will autom
 ## 📁 Project Structure
 
 ```
-Online/
+Angular-Furniture-Commerce/
 ├── src/
 │   ├── app/
 │   │   ├── components/           # Reusable components
@@ -117,18 +117,18 @@ Online/
 
 ## 🛣️ Application Routes
 
-| Route | Component | Description |
-|-------|-----------|-------------|
-| `/` | Login | Default landing page |
-| `/login` | Login | User authentication |
-| `/register` | Register | New user registration |
+| Route        | Component | Description                      |
+| ------------ | --------- | -------------------------------- |
+| `/`          | Login     | Default landing page             |
+| `/login`     | Login     | User authentication              |
+| `/register`  | Register  | New user registration            |
 | `/dashboard` | Dashboard | Home page with featured products |
-| `/shop` | Shop | Product catalog |
-| `/cart` | Cart | Shopping cart management |
-| `/checkout` | Checkout | Order summary and checkout |
-| `/profile` | Profile | User account information |
-| `/about` | About | About the company |
-| `/contact` | Contact | Contact form and information |
+| `/shop`      | Shop      | Product catalog                  |
+| `/cart`      | Cart      | Shopping cart management         |
+| `/checkout`  | Checkout  | Order summary and checkout       |
+| `/profile`   | Profile   | User account information         |
+| `/about`     | About     | About the company                |
+| `/contact`   | Contact   | Contact form and information     |
 
 ## 🔧 Available Scripts
 
@@ -166,18 +166,21 @@ ng generate module module-name           # Generate new module
 ## 🔑 Key Features Implementation
 
 ### Authentication System
+
 - Form validation with custom validators
 - Password matching validation
 - Email pattern validation
 - LocalStorage for session management
 
 ### Shopping Cart
+
 - Add/remove items dynamically
 - Quantity increment/decrement
 - Real-time total price calculation
 - Persistent cart state via API
 
 ### REST API Integration
+
 - HTTP GET requests for fetching data
 - HTTP POST requests for creating records
 - HTTP DELETE requests for removing items
@@ -187,12 +190,12 @@ ng generate module module-name           # Generate new module
 
 The application uses the following API endpoints (via JSON Server):
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/users` | Fetch all users |
-| POST | `/users` | Register new user |
-| GET | `/cart` | Fetch cart items |
-| POST | `/cart` | Add item to cart |
+| Method | Endpoint    | Description           |
+| ------ | ----------- | --------------------- |
+| GET    | `/users`    | Fetch all users       |
+| POST   | `/users`    | Register new user     |
+| GET    | `/cart`     | Fetch cart items      |
+| POST   | `/cart`     | Add item to cart      |
 | DELETE | `/cart/:id` | Remove item from cart |
 
 ## 🎨 UI/UX Features
