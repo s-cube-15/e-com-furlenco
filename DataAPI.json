@@ -80,18 +80,74 @@
   ],
   "cart": [
     {
-      "username": "Sudhanshu",
-      "item": "Lamp",
+      "id": "29f4",
+      "username": "sh",
+      "item": "Chair",
       "price": 5500,
-      "quantity": 1,
-      "id": 1
+      "quantity": 1
     },
     {
-      "username": "Sudhanshu",
-      "item": "Lamp",
+      "id": "c03a",
+      "username": "sh",
+      "item": "Chair",
       "price": 5500,
-      "quantity": 1,
-      "id": 2
+      "quantity": 1
+    },
+    {
+      "id": "1ab4",
+      "username": "sh",
+      "item": "Chair",
+      "price": 5500,
+      "quantity": 1
+    },
+    {
+      "id": "7f0d",
+      "username": "sh",
+      "item": "Chair",
+      "price": 5500,
+      "quantity": 1
+    },
+    {
+      "id": "3ecc",
+      "username": "sh",
+      "item": "Chair",
+      "price": 5500,
+      "quantity": 1
+    },
+    {
+      "id": "33e7",
+      "username": "sh",
+      "item": "Chair",
+      "price": 5500,
+      "quantity": 1
+    },
+    {
+      "id": "d577",
+      "username": "sh",
+      "item": "Chair",
+      "price": 5500,
+      "quantity": 1
+    },
+    {
+      "id": "74bf",
+      "username": "sh",
+      "item": "Sofa",
+      "price": 33500,
+      "quantity": 1
+    },
+    {
+      "id": "ab43",
+      "username": "sh",
+      "item": "Sofa",
+      "price": 33500,
+      "quantity": 1
+    },
+    {
+      "id": "d6fe",
+      "username": "sh",
+      "item": "Chair",
+      "price": 5500,
+      "quantity": 1
     }
   ]
 }
