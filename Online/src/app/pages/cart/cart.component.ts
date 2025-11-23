@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-cart',
@@ -15,23 +15,23 @@ export class CartComponent implements OnInit {
 
   url = "http://localhost:3000/cart"
 
- 
 
-  constructor(private _http:HttpClient, private _ts:Title){
+
+  constructor(private _http: HttpClient, private _ts: Title) {
     this._http.get<any[]>(this.url)
       .subscribe(resp => {
         this.cart = resp;
         console.log(this.cart);
         this.calculateTotal();
         this.calculatesubtotal();
-      
+
       });
   }
 
   ngOnInit(): void {
     this._ts.setTitle('Cart')
   }
-  calculateTotal(){
+  calculateTotal() {
     console.log("Here")
     // console.log(this.total)
     this.total = 0
@@ -64,6 +64,18 @@ export class CartComponent implements OnInit {
     if (it && it.quantity > 1) {
       it.quantity -= decrement;
       this.calculateTotal();
+    }
+  }
+  onClickDel() {
+    for(let item of this.cart){
+
+
+      this._http.delete<any[]>(`${this.url}/${item.id}`)
+        .subscribe(resp => {
+          // Update the local cart state after successful deletion
+          this.cart = this.cart.filter(item => item.id !== item.id);
+          this.calculateTotal(); // Recalculate the total after removing the item
+        });
     }
   }
 

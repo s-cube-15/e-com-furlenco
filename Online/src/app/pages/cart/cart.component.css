@@ -13,6 +13,10 @@ body {
     align-content: center;
     align-self: center; */
 }
+.carte{
+    display: flex;
+    justify-content: space-between;
+}
 .container {
     margin: 0 auto;
 }

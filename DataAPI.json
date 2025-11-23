@@ -69,22 +69,29 @@
       "password": "123456",
       "email": "s@g.com",
       "tel": "1234567891"
+    },
+    {
+      "id": "47a8",
+      "username": "Raj",
+      "password": "123456",
+      "email": "raj@gmail.com",
+      "tel": "9999999999"
     }
   ],
   "cart": [
     {
-      "id": "14f6",
-      "username": "Vansh",
-      "item": "Table",
-      "price": 4500,
-      "quantity": 1
+      "username": "Sudhanshu",
+      "item": "Lamp",
+      "price": 5500,
+      "quantity": 1,
+      "id": 1
     },
     {
-      "id": "26ca",
       "username": "Sudhanshu",
-      "item": "Chair",
+      "item": "Lamp",
       "price": 5500,
-      "quantity": 1
+      "quantity": 1,
+      "id": 2
     }
   ]
 }

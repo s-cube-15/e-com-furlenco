@@ -8,7 +8,12 @@
         <div class="cart-section w-100">
           <div class="card p-5 w-100">
             <h2>Cart</h2>
-            <span>Total items:{{cart.length}}</span>
+            <div class="carte">
+              <span>Total items: {{cart.length}}</span>
+              
+               <p  (click)="onClickDel()" style="cursor: pointer;" >Clear Cart</p>
+            </div>
+            
             <hr class="cart" />
             <table class="table table-hover">
               <thead>
